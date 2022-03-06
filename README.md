@@ -8,7 +8,6 @@ OSU Challenge 15 - R
     - vehicle_length and ground_clearance show the greatest correlation viz a vis mpg.
   Is the slope of the linear model considered to be zero? Why or why not?
 |Data Point | Slope | 
-
 |vehicle_length   | 6.267e+00  |
 |vehicle_weight   | 1.245e-03  |
 |spoiler_angle    | 6.877e-02  |
