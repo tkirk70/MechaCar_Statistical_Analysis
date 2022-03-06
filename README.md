@@ -26,13 +26,13 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
   Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
   -
 
-[](img/deliverable1a.PNG)
+[](..img/deliverable1a.PNG)
 
 A better use of the AWD column would be to use it as another category to investigate
-[](img/Length_v_MPG_by_AWD.png)
+[](..img/Length_v_MPG_by_AWD.png)
 
 With regression linear
-[](img/length_v_mpg.png)
+[](..img/length_v_mpg.png)
 
 ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
