@@ -81,3 +81,5 @@ t.test(Lot3$PSI, mu = 1500)
   What is the null hypothesis or alternative hypothesis?
   What statistical test would you use to test the hypothesis? And why?
   What data is needed to run the statistical test?
+
+(keyboard shortcut: `Ctrl + Alt + I`; OS X: `Cmd + Option + I`)
