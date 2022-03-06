@@ -5,7 +5,15 @@ OSU Challenge 15 - R
 ## Linear Regression to Predict MPG, and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
 
   Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+    - vehicle_length and ground_clearance show the greatest correlation viz a vis mpg.
   Is the slope of the linear model considered to be zero? Why or why not?
+|Data Point | Slope | 
+
+|vehicle_length   | 6.267e+00  |
+|vehicle_weight   | 1.245e-03  |
+|spoiler_angle    | 6.877e-02  |
+|ground_clearance | 3.546e+00  |
+|AWD              | -3.411e+00 |
   Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
