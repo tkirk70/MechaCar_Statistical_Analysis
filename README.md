@@ -4,7 +4,7 @@ OSU Challenge 15 - R
 
 ## Linear Regression to Predict MPG, and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
 
-```R
+```r
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,
   data = MechaCar)  #generate multiple linear regression model
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance +
@@ -28,7 +28,7 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
-```R:MechaCarChallenge.R [42-51]
+```r:MechaCarChallenge.R [42-51]
 
 ```
 
