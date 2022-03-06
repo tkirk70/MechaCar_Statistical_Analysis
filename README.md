@@ -28,7 +28,7 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
-```r:MechaCarChallenge.R
+```r:../MechaCarChallenge.R
 
 ```
 
