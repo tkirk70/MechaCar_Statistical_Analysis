@@ -14,7 +14,10 @@ OSU Challenge 15 - R
 |spoiler_angle    | 6.877e-02  |
 |ground_clearance | 3.546e+00  |
 |AWD              | -3.411e+00 |
+
+
   Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+  - 
 
 ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
