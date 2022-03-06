@@ -8,7 +8,8 @@ OSU Challenge 15 - R
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,
   data = MechaCar)  #generate multiple linear regression model
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance +
-  AWD, data = MechaCar))  #generate summary statistics```
+  AWD, data = MechaCar))  #generate summary statistics
+  ```
 
   Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
     - vehicle_length and ground_clearance show the greatest correlation viz a vis mpg.
