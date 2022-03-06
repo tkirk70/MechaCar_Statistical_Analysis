@@ -28,7 +28,17 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
-```r:../MechaCarChallenge.R
+```r
+total_summary <- Suspension_Coil %>%
+  summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))  #create summary table.
+total_summary
+View(total_summary)
+
+lot_summary <- Suspension_Coil %>%
+  group_by(Manufacturing_Lot) %>%
+  summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI),
+    .groups = "keep")  #create summary table grouped by lot.
+View(lot_summary)
 
 ```
 
