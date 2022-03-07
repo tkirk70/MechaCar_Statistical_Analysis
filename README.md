@@ -12,8 +12,9 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 ```
 
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-vehicle_length and ground_clearance show the greatest correlation vis-à-vis mpg.
+- vehicle_length and ground_clearance show the greatest correlation vis-à-vis mpg.
 Is the slope of the linear model considered to be zero? Why or why not?
+- AWD has a negative correlation, vehicle_length and ground_clearance have a positive correlation, and the other two have a negligible (almost zero) slope.
 
 |Data Point | Slope |
 |-----------|-------|
@@ -25,14 +26,14 @@ Is the slope of the linear model considered to be zero? Why or why not?
 
 
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-Only two of the five factors contribute significantly in determining mpg.
+- Only two of the five factors contribute significantly in determining mpg - vehicle_length and ground_clearance.
 
 ![](/img/deliverable1a.PNG)
 
 A better use of the AWD column would be to use it as another category to investigate.
 ![](/img/Length_v_MPG_by_AWD.png)
 
-With regression linear
+With linear regression line.
 ![](/img/length_v_mpg.png)
 
 ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
@@ -73,24 +74,25 @@ t.test(Lot3$PSI, mu = 1500)
 ```
 
 T-Test results for all lots combined.
+- Overall the population meets the standard for variance < 100 psi
 ![](img/deliverable3.PNG)
 
 T-Test results for individual lots.
+- Lots 1 and 2 meet the standard for variance.
 
 ![](img/deliverable3a.PNG)
 
 ![](img/deliverable3b.PNG)
 
-![](img/deliverable3c.PNG)
+- Lot3 has a p-value of less than 0.05 (p-value = 0.04168), therefore is an unacceptable representation of the whole population.
 
-Lot3 has a p-value of less than 0.05 (p-value = 0.04168), therefore is an unacceptable representation of the whole population.
+![](img/deliverable3c.PNG)
 
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+If MechaCar would like to compare itself to the competition, more statistical analysis should be done.
+- Given the climate crisis and current geopolitical instability, MechCar should focus on fuel efficiency.
+- A theoretical null hypothesis could be: MechaCar's fleet of cars avg mpg is equal to the competition's mean across all subgroups.
+- MechaCar should conduct a t-test() on all manufacturer's mpg numbers to assess where it stands in the industry.  Subset() could be used to drill down and compare different body styles.
+- MechaCar would need to be able to access the competitions models and mpg ratings in order to conduct this research.

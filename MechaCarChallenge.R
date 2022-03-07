@@ -87,3 +87,13 @@ summary(Lot3)
 summary(Lot1$PSI)
 summary(Lot2$PSI)
 summary(Lot3$PSI)
+
+mecha_matrix <- as.matrix(MechaCar[,c("vehicle_length","ground_clearance","spoiler_angle", "vehicle_weight", "mpg")]) #convert data frame into numeric matrix
+cor(mecha_matrix)
+
+# Deliverable 4 - Distribution
+ggplot(Suspension_Coil,aes(x=PSI)) + geom_density() #visualize distribution using density plot
+shapiro.test(Lot1$PSI)
+shapiro.test(Lot2$PSI)
+shapiro.test(Lot3$PSI)
+shapiro.test(Suspension_Coil$PSI)
