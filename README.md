@@ -61,11 +61,7 @@ The design specifications for the MechaCar suspension coils dictate that the var
 ## T-Tests on Suspension Coils
 
 ```r
-# Deliverable #3 Not sure if they wanted a sample versus population analysis
-# below or mean vs population.
-sample_table <- Suspension_Coil %>%
-  sample_n(50)  #randomly sample 50 data points
-t.test((sample_table$PSI), mu = mean(Suspension_Coil$PSI))  #compare sample versus population means
+# Deliverable 3: T-Tests on Suspension Coils
 t.test(Suspension_Coil$PSI, mu = 1500)
 
 Lot1 <- subset(Suspension_Coil, Manufacturing_Lot == "Lot1")
