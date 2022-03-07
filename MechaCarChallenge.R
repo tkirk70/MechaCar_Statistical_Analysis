@@ -4,12 +4,12 @@ The downloaded binary packages are in
 	C:\Users\timot\AppData\Local\Temp\RtmpMR4Wfk\downloaded_packages
 # Challenge Deliverable #1
 library(dplyr)
-MechaCar <- read.csv("../MechaCar_mpg.csv", check.names = F, stringsAsFactors = F)
+MechaCar <- read.csv("resources/MechaCar_mpg.csv", check.names = F, stringsAsFactors = F)
 head(MechaCar)
 tail(MechaCar)
 typeof(MechaCar)
 class(MechaCar)
-read.csv("../MechaCar_mpg.csv")
+read.csv("resources/MechaCar_mpg.csv")
 
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,
   data = MechaCar)  #generate multiple linear regression model
@@ -31,8 +31,8 @@ plt <- ggplot(MechaCar, aes(x = vehicle_length, y = mpg, color = AWD))  #import 
 plt + geom_point() + labs(x = "Vehicle Length (ft)", y = "Miles Per Gallon", color = "AWD")  #add scatter plot with labels
 
 # Deliverable #2
-Suspension_Coil <- read.csv("../Suspension_Coil.csv")
-Suspension_Coil.dt <- data.table::fread("../Suspension_Coil.csv")
+Suspension_Coil <- read.csv("resources/Suspension_Coil.csv")
+Suspension_Coil.dt <- data.table::fread("resources/Suspension_Coil.csv")
 Suspension_Coil.dt
 class(Suspension_Coil.dt)
 class(Suspension_Coil)

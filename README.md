@@ -49,6 +49,9 @@ lot_summary <- Suspension_Coil %>%
     .groups = "keep")  #create summary table grouped by lot.
 View(lot_summary)
 ```
+![](img/deliverable2a.PNG)
+
+![](img/deliverable2b.PNG)
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
@@ -69,6 +72,10 @@ t.test(Lot1$PSI, mu = 1500)
 t.test(Lot2$PSI, mu = 1500)
 t.test(Lot3$PSI, mu = 1500)
 ```
+
+![](img/deliverable3a.PNG)
+
+![](img/deliverable3a1.PNG)
 
 Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
 
