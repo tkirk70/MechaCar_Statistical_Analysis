@@ -12,7 +12,7 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 ```
 
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-vehicle_length and ground_clearance show the greatest correlation viz a vis mpg.
+vehicle_length and ground_clearance show the greatest correlation vis-à-vis mpg.
 Is the slope of the linear model considered to be zero? Why or why not?
 
 |Data Point | Slope |
@@ -54,6 +54,9 @@ View(lot_summary)
 ![](img/deliverable2b.PNG)
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+- The total_summary has a variance of less than 100 pounds per square inch (
+62.29356)
+- The individual lot summaries produce different results: Lot1 and Lot2 are within tolerance, but the variance for Lot3 is 170.2861224 and exceeds the pre-determined cutoff of 100.
 
 ## T-Tests on Suspension Coils
 
@@ -73,11 +76,19 @@ t.test(Lot2$PSI, mu = 1500)
 t.test(Lot3$PSI, mu = 1500)
 ```
 
+T-Test results for all lots combined.
+![](img/deliverable3.PNG)
+
+T-Test results for individual lots.
+
 ![](img/deliverable3a.PNG)
 
-![](img/deliverable3a1.PNG)
+![](img/deliverable3b.PNG)
 
-Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+![](img/deliverable3c.PNG)
+
+Lot3 has a p-value of less than 0.05 (p-value = 0.04168), therefore is an unacceptable representation of the whole population.
+
 
 ## Study Design: MechaCar vs Competition
 
