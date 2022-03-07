@@ -75,6 +75,7 @@ t.test(Lot3$PSI, mu = 1500)
 
 T-Test results for all lots combined.
 - Overall the population meets the standard for variance < 100 psi
+
 ![](img/deliverable3.PNG)
 
 T-Test results for individual lots.
